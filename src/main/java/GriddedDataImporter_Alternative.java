@@ -23,6 +23,7 @@ public class GriddedDataImporter_Alternative extends SelfContainedPluginAlt{
     //region Fields
     private String _pluginVersion;
     List<DataLocation> _inputDataLocations;
+    List<DataLocation> _outputDataLocations;
     private static final String DocumentRoot = "FIRO_WFP_Alternative";
     private static final String OutputVariableElement = "OutputVariables";
     private static final String AlternativeNameAttribute = "Name";
