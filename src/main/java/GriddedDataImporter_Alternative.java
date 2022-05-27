@@ -9,9 +9,6 @@ import hec.model.OutputVariable;
 import hec2.model.DataLocation;
 import hec2.plugin.model.ComputeOptions;
 import hec2.plugin.selfcontained.SelfContainedPluginAlt;
-import org.jdom.Document;
-import org.jdom.Element;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +21,7 @@ public class GriddedDataImporter_Alternative extends SelfContainedPluginAlt{
     private String _pluginVersion;
     List<DataLocation> _inputDataLocations;
     List<DataLocation> _outputDataLocations;
-    private static final String DocumentRoot = "FIRO_WFP_Alternative";
+    private static final String DocumentRoot = "GriddedDataImporter";
     private static final String OutputVariableElement = "OutputVariables";
     private static final String AlternativeNameAttribute = "Name";
     private static final String AlternativeDescriptionAttribute = "Desc";

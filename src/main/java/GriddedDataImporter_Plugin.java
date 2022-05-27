@@ -26,10 +26,10 @@ import java.util.List;
  * @author WatPowerUser
  */
 public class GriddedDataImporter_Plugin extends AbstractSelfContainedWatPlugin<GriddedDataImporter_Alternative> implements CreatableWatPlugin, OutputPlugin  {
-    public static final String PluginName = "FIRO_WFP";
+    public static final String PluginName = "GriddedDataImporter";
     private static final String _pluginVersion = "1.0.1";
-    private static final String _pluginSubDirectory = "FIRO_WFP";
-    private static final String _pluginExtension = ".FIROWFP";
+    private static final String _pluginSubDirectory = "GriddedDataImporter";
+    private static final String _pluginExtension = ".GriddedDataImporter";
     /**
      * @param args the command line arguments
      */
