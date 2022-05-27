@@ -14,10 +14,10 @@ import hec2.plugin.action.OutputElement;
 import hec2.plugin.lang.ModelLinkingException;
 import hec2.plugin.lang.OutputException;
 import hec2.plugin.model.ModelAlternative;
+import hec2.plugin.selfcontained.SelfContainedPlugin;
 import hec2.wat.model.tracking.OutputPlugin;
-import hec2.wat.plugin.AbstractSelfContainedWatPlugin;
-import hec2.wat.plugin.CreatableWatPlugin;
-import hec2.wat.plugin.WatPluginManager;
+import hec2.wat.plugin.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +25,7 @@ import java.util.List;
  *
  * @author WatPowerUser
  */
-public class GriddedDataImporter_Plugin extends AbstractSelfContainedWatPlugin<GriddedDataImporter_Alternative> implements CreatableWatPlugin, OutputPlugin  {
+public class GriddedDataImporter_Plugin extends AbstractSelfContainedWatPlugin<GriddedDataImporter_Alternative> implements WatPlugin, SelfContainedPlugin, CreatableWatPlugin, HydrologicEventPlugin {
     public static final String PluginName = "GriddedDataImporter";
     private static final String _pluginVersion = "1.0.1";
     private static final String _pluginSubDirectory = "GriddedDataImporter";
@@ -134,23 +134,6 @@ public class GriddedDataImporter_Plugin extends AbstractSelfContainedWatPlugin<G
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
-    public List<OutputVariable> getAvailOutputVariables(ModelAlternative ma) {
-        List<OutputVariable> ret = new ArrayList<>();
-        GriddedDataImporter_Alternative alt = getAlt(ma);
-        return alt.getOutputVariables();
-    }
-    @Override
-    public boolean computeOutputVariables(List<OutputVariable> list, ModelAlternative ma) {
-        GriddedDataImporter_Alternative alt = getAlt(ma);
-        return alt.computeOutputVariables(list);
-    }
 
-    @Override
-    public boolean hasOutputVariables(ModelAlternative ma) {
-        GriddedDataImporter_Alternative alt = getAlt(ma);
-                Boolean hazvars = alt.hasOutputVariables();
-                return hazvars;
-    }
 
 }
