@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FIRO_WFP_Alternative AlternativeNameAttribute="myName" AlternativeDescriptionAttribute="myDescription" AlternativeFilenameAttribute="C:\Programs\Git\Repos\FIRO_WAT_ForecastProcessor\src\test\resources\savedata.xml">
+  <DataLocations>
+    <DataLocation Name="Coyote.fake_forecast" Class="hec2.model.DataLocation" ComputeType="Computed" Parameter="flow" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="myName" />
+    </DataLocation>
+  </DataLocations>
+  <OutputDataLocations>
+    <DataLocation Name="Coyote.fake_forecast" Class="MetricOutputDataLocation" ComputeType="Computed" Parameter="flow" OutOfDate="false" PrevModelIndex="0" Metrics="MAX" acrossTraceNotTime="false">
+      <ModelAlternative Name="myName" />
+    </DataLocation>
+  </OutputDataLocations>
+</FIRO_WFP_Alternative>
+
